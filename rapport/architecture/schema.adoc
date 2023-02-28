@@ -1,0 +1,32 @@
+=== Schéma d’architecture
+image::DiagrammeFinal.png[DiagrammeFinal]
+
+
+////
+Insérer ici un ou plusieurs schémas d’architecture du projet. Voir le
+cours d’introduction au Génie Logiciel. N’hésitez pas à faire des
+schémas hiérarchiques, c'est-à-dire avec un bloc d’un schéma général
+raffiné dans un second schéma ; ou des schémas en plusieurs parties.
+////
+
+
+==== Description des blocs
+
+===== Bloc Potager 
+
+Ce bloc présente de manière générale et simplifiée les différents systèmes qui seront dans la surface à cultiver, à savoir plusieurs capteurs pouvant mesurer les grandeurs physiques les plus pertinentes dans une plantation (température, humidité du sol, débit d'eau dans le tuyau et luminosité), ainsi que d'autres systèmes permettant une bonne gestion du jardinage comme le contrôleur de débit d'eau et des lampes pour la lumière.
+
+===== Bloc  Cerveau
+
+Il s'agit de l'unité centrale du système, ce bloc a pour but de gérer les informations délivrées par les capteurs, de commander les actionneurs présents dans le bloc potager (ordre envoyé par l'application mobile), ainsi que d'envoyer toutes les informations concernant les capteurs et les actionneurs vers une base de données distante, pour qu'elles soient ensuite exploitées par notre application mobile.  
+
+===== Bloc Base de données 
+
+
+L'unité centrale est connectée à une base de donnée distante, cette dernière reçoit et stocke les données délivrées par l'unité centrale, et par l'utilisateur à travers l'application.
+
+
+===== Bloc Application mobile 
+
+Le but de la création de cette application est de permettre à l'utilisateur de suivre l'évolution de l'état des ses plantes présentes dans le potager, à travers la collection des informations depuis la base de données, et de lui permettre de commander certains actionneurs à distance où qu'il se situe. 
+

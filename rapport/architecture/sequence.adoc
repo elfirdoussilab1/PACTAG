@@ -1,0 +1,3 @@
+=== Diagramme de séquence (optionnel)
+
+image::Diagramme_sequence.jpg[Diagramme_sequence]
